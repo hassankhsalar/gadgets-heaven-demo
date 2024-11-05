@@ -3,7 +3,7 @@ import { faCheck, faCartShopping, faHeart } from '@fortawesome/free-solid-svg-ic
 import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100 px-20">
+        <div className="navbar bg-base-100 px-24 absolute z-10 bg-transparent">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,25 +22,25 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        className="menu menu-sm  dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
         <Link to='/'>Home</Link>
-        <Link to=''>Statistics</Link>
-        <Link to=''>Dashboard</Link>
+        <Link to='/statistics'>Statistics</Link>
+        <Link to='/dashBoard'>Dashboard</Link>
         
       <li><a>Statistics</a></li>
       <li><a>Dashboard</a></li>
       </ul>
     </div>
-    <h2 className='text-2xl font-bold	'>Gadgets Heaven</h2>
+    <h2 className='text-2xl text-slate-200	 font-bold	'>Gadgets Heaven</h2>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-      <li><a>Home</a></li>
-      <li><a>Statistics</a></li>
-      <li><a>Dashboard</a></li>
+    <ul className="menu menu-horizontal px-1 gap-6 text-slate-200	">
+        <Link to='/'>Home</Link>
+        <Link to='/statistics'>Statistics</Link>
+        <Link to='/dashBoard'>Dashboard</Link>
     </ul>
   </div>
-  <div className="navbar-end gap-3 bg-white">
+  <div className="navbar-end gap-3">
   <FontAwesomeIcon className='bg-slate-50 rounded-full p-1' icon={faCartShopping} />
   <FontAwesomeIcon className='bg-slate-50 rounded-full p-1' icon={faHeart} />
   </div>
