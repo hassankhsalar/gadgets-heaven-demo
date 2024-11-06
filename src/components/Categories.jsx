@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const Categories = ({ categories = [] }) => {
@@ -13,9 +13,10 @@ const Categories = ({ categories = [] }) => {
         <div role="tablist" className="tabs tabs-boxed flex flex-col border-2 items-start w-40">
             {
                 categories.map(category => (
-                    <Link key={category.category} to='' role='tab' className='tab'>
+                    <NavLink key={category.category} to={`/category/${category.category}`} role='tab' className={({ isActive }) => `tab ${isActive? 'tab-active' : '' }`}
+                    >
                         {category.category}
-                    </Link>
+                    </NavLink>
                 ))
             }
         </div>

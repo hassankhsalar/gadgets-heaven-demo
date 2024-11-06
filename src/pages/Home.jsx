@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../components/Banner';
 import HeadingHome from '../components/HeadingHome';
-import { useLoaderData } from 'react-router-dom';
+import { Outlet, useLoaderData } from 'react-router-dom';
 import Categories from '../components/Categories';
 
 const Home = () => {
@@ -15,6 +15,7 @@ const Home = () => {
             {/* categories tab */}
             <Categories categories={categories} />
             {/* dynamic nested components */}
+            <Outlet />
         </div>
     );
 };

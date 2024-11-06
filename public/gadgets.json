@@ -1,0 +1,259 @@
+[
+    {
+    "id": "1",
+    "name": "Laptop Pro 15",
+    "image": "https://example.com/images/laptop1.jpg",
+    "category": "laptop",
+    "price": 1050,
+    "description": "High-performance laptop with 15-inch display and 16GB RAM.",
+    "specification": [
+    "15-inch display",
+    "16GB RAM",
+    "512GB SSD",
+    "Intel i7 processor"
+    ],
+    "availability": true,
+    "rating": 4.8
+    },
+    {
+    "id": "2",
+    "name": "Laptop Air 13",
+    "image": "https://example.com/images/laptop2.jpg",
+    "category": "laptop",
+    "price": 899,
+    "description": "Lightweight laptop with long battery life and 13-inch display.",
+    "specification": [
+    "13-inch display",
+    "8GB RAM",
+    "256GB SSD",
+    "Intel i5 processor"
+    ],
+    "availability": true,
+    "rating": 4.5
+    },
+    {
+    "id": "3",
+    "name": "Gaming Laptop X17",
+    "image": "https://example.com/images/laptop3.jpg",
+    "category": "laptop",
+    "price": 1499,
+    "description": "High-end gaming laptop with powerful graphics and cooling system.",
+    "specification": [
+    "17-inch display",
+    "32GB RAM",
+    "1TB SSD",
+    "Intel i9 processor",
+    "NVIDIA RTX 3070"
+    ],
+    "availability": false,
+    "rating": 4.9
+    },
+    {
+    "id": "4",
+    "name": "Business Laptop Elite 14",
+    "image": "https://example.com/images/laptop4.jpg",
+    "category": "laptop",
+    "price": 1120,
+    "description": "Business laptop with 14-inch display and top security features.",
+    "specification": [
+    "14-inch display",
+    "16GB RAM",
+    "512GB SSD",
+    "Intel i7 processor",
+    "Fingerprint reader"
+    ],
+    "availability": true,
+    "rating": 4.7
+    },
+    {
+    "id": "5",
+    "name": "Laptop Go 12",
+    "image": "https://example.com/images/laptop5.jpg",
+    "category": "laptop",
+    "price": 599,
+    "description": "Compact laptop with 12-inch display, perfect for students.",
+    "specification": [
+    "12-inch display",
+    "4GB RAM",
+    "128GB SSD",
+    "Intel i3 processor"
+    ],
+    "availability": true,
+    "rating": 4.2
+    },
+    {
+    "id": "6",
+    "name": "Laptop Studio 14",
+    "image": "https://example.com/images/laptop6.jpg",
+    "category": "laptop",
+    "price": 1199,
+    "description": "Professional laptop with high color accuracy display for creatives.",
+    "specification": [
+    "14-inch display",
+    "16GB RAM",
+    "512GB SSD",
+    "Intel i7 processor",
+    "Touchscreen"
+    ],
+    "availability": false,
+    "rating": 4.6
+    },
+    {
+    "id": "7",
+    "name": "Smartphone Ultra",
+    "image": "https://example.com/images/smartphone1.jpg",
+    "category": "smartphone",
+    "price": 899,
+    "description": "High-end smartphone with 6.7-inch display and triple-camera setup.",
+    "specification": [
+    "6.7-inch display",
+    "128GB storage",
+    "12GB RAM",
+    "5000mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.8
+    },
+    {
+    "id": "8",
+    "name": "Smartphone Compact",
+    "image": "https://example.com/images/smartphone2.jpg",
+    "category": "smartphone",
+    "price": 699,
+    "description": "Compact smartphone with powerful performance and long battery life.",
+    "specification": [
+    "5.8-inch display",
+    "64GB storage",
+    "6GB RAM",
+    "4000mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.4
+    },
+    {
+    "id": "9",
+    "name": "Smart Watch Series X",
+    "image": "https://example.com/images/smartwatch1.jpg",
+    "category": "smart watch",
+    "price": 249,
+    "description": "Advanced smartwatch with fitness tracking and GPS.",
+    "specification": [
+    "1.5-inch display",
+    "Heart rate monitor",
+    "GPS",
+    "Water resistant"
+    ],
+    "availability": true,
+    "rating": 4.6
+    },
+    {
+    "id": "10",
+    "name": "Smart Watch Active",
+    "image": "https://example.com/images/smartwatch2.jpg",
+    "category": "smart watch",
+    "price": 199,
+    "description": "Lightweight smartwatch with sleep and activity tracking.",
+    "specification": [
+    "1.2-inch display",
+    "Sleep tracking",
+    "Step counter",
+    "Water resistant"
+    ],
+    "availability": false,
+    "rating": 4.3
+    },
+    {
+    "id": "11",
+    "name": "Wireless Earbuds",
+    "image": "https://example.com/images/accessory1.jpg",
+    "category": "accessories",
+    "price": 129,
+    "description": "Compact wireless earbuds with noise cancellation.",
+    "specification": [
+    "Bluetooth 5.0",
+    "Noise cancellation",
+    "24-hour battery life"
+    ],
+    "availability": true,
+    "rating": 4.7
+    },
+    {
+    "id": "12",
+    "name": "Portable Charger 20000mAh",
+    "image": "https://example.com/images/accessory2.jpg",
+    "category": "accessories",
+    "price": 59,
+    "description": "High-capacity portable charger for all your devices.",
+    "specification": [
+    "20000mAh capacity",
+    "Dual USB ports",
+    "LED indicator"
+    ],
+    "availability": true,
+    "rating": 4.5
+    },
+    {
+    "id": "13",
+    "name": "MacBook Air M1",
+    "image": "https://example.com/images/macbook1.jpg",
+    "category": "macbook",
+    "price": 999,
+    "description": "Apple MacBook Air with M1 chip for faster performance.",
+    "specification": [
+    "13.3-inch Retina display",
+    "8GB RAM",
+    "256GB SSD",
+    "M1 chip"
+    ],
+    "availability": true,
+    "rating": 4.9
+    },
+    {
+    "id": "14",
+    "name": "MacBook Pro M1",
+    "image": "https://example.com/images/macbook2.jpg",
+    "category": "macbook",
+    "price": 1299,
+    "description": "Apple MacBook Pro with M1 chip for advanced performance.",
+    "specification": [
+    "13.3-inch Retina display",
+    "8GB RAM",
+    "512GB SSD",
+    "M1 chip"
+    ],
+    "availability": false,
+    "rating": 4.8
+    },
+    {
+    "id": "15",
+    "name": "iPhone 13",
+    "image": "https://example.com/images/iphone1.jpg",
+    "category": "iphone",
+    "price": 799,
+    "description": "Latest iPhone with advanced dual-camera system and 5G.",
+    "specification": [
+    "6.1-inch display",
+    "128GB storage",
+    "5G enabled",
+    "A15 Bionic chip"
+    ],
+    "availability": true,
+    "rating": 4.8
+    },
+    {
+    "id": "16",
+    "name": "iPhone 13 Pro",
+    "image": "https://example.com/images/iphone2.jpg",
+    "category": "iphone",
+    "price": 999,
+    "description": "Premium iPhone with triple-camera system and ProMotion display.",
+    "specification": [
+    "6.1-inch ProMotion display",
+    "128GB storage",
+    "5G enabled",
+    "A15 Bionic chip"
+    ],
+    "availability": true,
+    "rating": 4.9
+    }
+    ]

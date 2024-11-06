@@ -7,6 +7,7 @@ import GadgetDetails from "../pages/GadgetDetails"
 import Home from "../pages/Home"
 import DashBoard from "../pages/DashBoard"
 import Statistics from "../pages/Statistics"
+import GagdgetCards from "../components/GagdgetCards"
 
 
 const routes = createBrowserRouter([
@@ -17,8 +18,19 @@ const routes = createBrowserRouter([
         {
           path: '/',
           element: <Home/>,
-          loader: ()=> fetch('https://gist.githubusercontent.com/hassankhsalar/930b931259b0f2fc153ea856b429ff76/raw/f075f8ff231f6f2c4a8681969308d514216a38fb/categories.json'),
-
+          loader: ()=> fetch('/categories.json'),
+          children: [
+            {
+              path: '/',
+              element: <GagdgetCards />,
+              loader: ()=> fetch('../gadgets.json'),
+            },
+            {
+              path: '/category/:category',
+              element: <GagdgetCards />,
+              loader: ()=> fetch('../gadgets.json'),
+            },
+          ],
         },
         {
           path: '/gadgets',
