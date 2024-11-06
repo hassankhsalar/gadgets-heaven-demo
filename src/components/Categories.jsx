@@ -10,7 +10,7 @@ const Categories = ({ categories = [] }) => {
     }
 
     return (
-        <div role="tablist" className="tabs tabs-boxed flex flex-col border-2 items-start w-40">
+        <div role="tablist" className="tabs tabs-boxed flex flex-col  items-start w-40">
             {
                 categories.map(category => (
                     <NavLink key={category.category} to={`/category/${category.category}`} role='tab' className={({ isActive }) => `tab ${isActive? 'tab-active' : '' }`}

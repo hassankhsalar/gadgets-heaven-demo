@@ -2,7 +2,7 @@
     {
     "id": "1",
     "name": "Laptop Pro 15",
-    "image": "https://example.com/images/laptop1.jpg",
+    "image": "https://i.ibb.co.com/PZNxKb2/1.png",
     "category": "laptop",
     "price": 1050,
     "description": "High-performance laptop with 15-inch display and 16GB RAM.",
@@ -18,7 +18,7 @@
     {
     "id": "2",
     "name": "Laptop Air 13",
-    "image": "https://example.com/images/laptop2.jpg",
+    "image": "https://i.ibb.co.com/Wy5YnYb/2.jpg",
     "category": "laptop",
     "price": 899,
     "description": "Lightweight laptop with long battery life and 13-inch display.",
@@ -34,7 +34,7 @@
     {
     "id": "3",
     "name": "Gaming Laptop X17",
-    "image": "https://example.com/images/laptop3.jpg",
+    "image": "https://i.ibb.co.com/GFxVVBw/3.webp",
     "category": "laptop",
     "price": 1499,
     "description": "High-end gaming laptop with powerful graphics and cooling system.",
@@ -51,7 +51,7 @@
     {
     "id": "4",
     "name": "Business Laptop Elite 14",
-    "image": "https://example.com/images/laptop4.jpg",
+    "image": "https://i.ibb.co.com/JrWRrW4/4.jpg",
     "category": "laptop",
     "price": 1120,
     "description": "Business laptop with 14-inch display and top security features.",
@@ -68,7 +68,7 @@
     {
     "id": "5",
     "name": "Laptop Go 12",
-    "image": "https://example.com/images/laptop5.jpg",
+    "image": "https://i.ibb.co.com/YNtR5zP/5.webp",
     "category": "laptop",
     "price": 599,
     "description": "Compact laptop with 12-inch display, perfect for students.",
@@ -84,7 +84,7 @@
     {
     "id": "6",
     "name": "Laptop Studio 14",
-    "image": "https://example.com/images/laptop6.jpg",
+    "image": "https://i.ibb.co.com/1vrDQn5/6.webp",
     "category": "laptop",
     "price": 1199,
     "description": "Professional laptop with high color accuracy display for creatives.",
@@ -101,7 +101,7 @@
     {
     "id": "7",
     "name": "Smartphone Ultra",
-    "image": "https://example.com/images/smartphone1.jpg",
+    "image": "https://i.ibb.co.com/m0x7XVZ/7.jpg",
     "category": "smartphone",
     "price": 899,
     "description": "High-end smartphone with 6.7-inch display and triple-camera setup.",
@@ -117,7 +117,7 @@
     {
     "id": "8",
     "name": "Smartphone Compact",
-    "image": "https://example.com/images/smartphone2.jpg",
+    "image": "https://i.ibb.co.com/T129Z1g/8.webp",
     "category": "smartphone",
     "price": 699,
     "description": "Compact smartphone with powerful performance and long battery life.",
@@ -133,7 +133,7 @@
     {
     "id": "9",
     "name": "Smart Watch Series X",
-    "image": "https://example.com/images/smartwatch1.jpg",
+    "image": "https://i.ibb.co.com/gtMK0Dy/9.jpg",
     "category": "smart watch",
     "price": 249,
     "description": "Advanced smartwatch with fitness tracking and GPS.",
@@ -149,7 +149,7 @@
     {
     "id": "10",
     "name": "Smart Watch Active",
-    "image": "https://example.com/images/smartwatch2.jpg",
+    "image": "https://i.ibb.co.com/nQBmqsV/10.png",
     "category": "smart watch",
     "price": 199,
     "description": "Lightweight smartwatch with sleep and activity tracking.",
@@ -165,7 +165,7 @@
     {
     "id": "11",
     "name": "Wireless Earbuds",
-    "image": "https://example.com/images/accessory1.jpg",
+    "image": "https://i.ibb.co.com/LPNW0NX/11.jpg",
     "category": "accessories",
     "price": 129,
     "description": "Compact wireless earbuds with noise cancellation.",
@@ -180,7 +180,7 @@
     {
     "id": "12",
     "name": "Portable Charger 20000mAh",
-    "image": "https://example.com/images/accessory2.jpg",
+    "image": "https://i.ibb.co.com/NVkzyCC/12.jpg",
     "category": "accessories",
     "price": 59,
     "description": "High-capacity portable charger for all your devices.",
@@ -195,7 +195,7 @@
     {
     "id": "13",
     "name": "MacBook Air M1",
-    "image": "https://example.com/images/macbook1.jpg",
+    "image": "https://i.ibb.co.com/9ZSRqpS/13.jpg",
     "category": "macbook",
     "price": 999,
     "description": "Apple MacBook Air with M1 chip for faster performance.",
@@ -211,7 +211,7 @@
     {
     "id": "14",
     "name": "MacBook Pro M1",
-    "image": "https://example.com/images/macbook2.jpg",
+    "image": "https://i.ibb.co.com/G9WQxx6/14.jpg",
     "category": "macbook",
     "price": 1299,
     "description": "Apple MacBook Pro with M1 chip for advanced performance.",
@@ -227,7 +227,7 @@
     {
     "id": "15",
     "name": "iPhone 13",
-    "image": "https://example.com/images/iphone1.jpg",
+    "image": "https://i.ibb.co.com/qprTmXp/15.jpg",
     "category": "iphone",
     "price": 799,
     "description": "Latest iPhone with advanced dual-camera system and 5G.",
@@ -243,7 +243,7 @@
     {
     "id": "16",
     "name": "iPhone 13 Pro",
-    "image": "https://example.com/images/iphone2.jpg",
+    "image": "https://i.ibb.co.com/qj37621/16.jpg",
     "category": "iphone",
     "price": 999,
     "description": "Premium iPhone with triple-camera system and ProMotion display.",

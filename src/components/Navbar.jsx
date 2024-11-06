@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faCartShopping, faHeart } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 const Navbar = () => {
     return (
         <div className="navbar bg-base-100 px-24 absolute z-10 bg-transparent">
@@ -23,12 +23,12 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm  dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <Link to='/'>Home</Link>
+        <NavLink className={({ isActive }) => `font-bold ${isActive? 'text-sky-400' : 'hover:text-sky-400' }`} to='/'>Home</NavLink>
         <Link to='/statistics'>Statistics</Link>
-        <Link to='/dashBoard'>Dashboard</Link>
+        <NavLink to="/cartlist">Dashboard</NavLink>
         
       <li><a>Statistics</a></li>
-      <li><a>Dashboard</a></li>
+      <li><NavLink to="/cartlist">Dashboard</NavLink></li>
       </ul>
     </div>
     <h2 className='text-2xl text-slate-200	 font-bold	'>Gadgets Heaven</h2>
@@ -37,7 +37,7 @@ const Navbar = () => {
     <ul className="menu menu-horizontal px-1 gap-6 text-slate-200	">
         <Link to='/'>Home</Link>
         <Link to='/statistics'>Statistics</Link>
-        <Link to='/dashBoard'>Dashboard</Link>
+        <NavLink to="/cartlist">Dashboard</NavLink>
     </ul>
   </div>
   <div className="navbar-end gap-3">

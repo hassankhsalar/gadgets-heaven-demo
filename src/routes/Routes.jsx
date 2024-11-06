@@ -8,6 +8,7 @@ import Home from "../pages/Home"
 import DashBoard from "../pages/DashBoard"
 import Statistics from "../pages/Statistics"
 import GagdgetCards from "../components/GagdgetCards"
+import CartList from "../cartList/CartList"
 
 
 const routes = createBrowserRouter([
@@ -37,8 +38,9 @@ const routes = createBrowserRouter([
           element: <Gadgets />
         },
         {
-          path: '/gadgetDetails',
-          element: <GadgetDetails />
+          path: '/gadgetDetails/:id',
+          element: <GadgetDetails />,
+          loader: ()=> fetch('../gadgets.json'),
         },
         {
           path: '/statistics',
@@ -47,6 +49,11 @@ const routes = createBrowserRouter([
         {
           path: '/dashBoard',
           element: <DashBoard/>,
+        },
+        {
+          path: '/cartlist',
+          element:<CartList></CartList>,
+          loader: ()=> fetch('../gadgets.json'),
         },
       ]
     },

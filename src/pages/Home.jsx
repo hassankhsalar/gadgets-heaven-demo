@@ -12,10 +12,15 @@ const Home = () => {
             <Banner/>
             {/* heading */}
             <HeadingHome/>
-            {/* categories tab */}
+
+            <div className='flex flex-row'>
+                {/* categories tab */}
             <Categories categories={categories} />
             {/* dynamic nested components */}
             <Outlet />
+            </div>
+
+            
         </div>
     );
 };

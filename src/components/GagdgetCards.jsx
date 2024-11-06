@@ -17,7 +17,7 @@ const GagdgetCards = () => {
     }, [category, data])
     console.log(data)
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {
             gadgets.map(gadget => (
                 <Card key={gadget.id} gadget={gadget}/>
