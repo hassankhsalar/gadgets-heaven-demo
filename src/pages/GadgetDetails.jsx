@@ -4,8 +4,11 @@ import ReactStars from "react-rating-stars-component";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { addToStoredCartList, addToStoredWishList } from '../utility/addToDb';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const GadgetDetails = () => {
+    const notify = () => toast("Wow so easy!");
     const { id } = useParams(); 
     const data = useLoaderData(); 
     const gadget = data.find(item => item.id === id);
@@ -74,6 +77,7 @@ const GadgetDetails = () => {
                         <button onClick={() => handleAddToWishList(id)} className="btn rounded-full border-1 border-gray-300">
                         <FontAwesomeIcon className='bg-slate-50 rounded-full p-1' icon={faHeart} />
                                 </button>
+                                <ToastContainer />
                         </div>
                     </div>
                 </div>

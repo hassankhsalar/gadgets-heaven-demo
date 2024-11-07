@@ -19,7 +19,7 @@ const Home = () => {
             {/* dynamic nested components */}
             <Outlet />
             </div>
-
+            
             
         </div>
     );

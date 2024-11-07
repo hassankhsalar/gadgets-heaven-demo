@@ -22,6 +22,7 @@ const GagdgetCards = () => {
             gadgets.map(gadget => (
                 <Card key={gadget.id} gadget={gadget}/>
              ))}
+            
         </div>
     );
 };

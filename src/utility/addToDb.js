@@ -1,4 +1,5 @@
 import { json } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const getStoredCartList = () => {
     const storedListStr = localStorage.getItem('cart-list');
@@ -18,6 +19,7 @@ const getStoredCartList = () => {
         storedList.push(id);
         const storedListStr = JSON.stringify(storedList);
         localStorage.setItem('cart-list', storedListStr);
+        toast('this gadget is added to the cart')
     }
  }
 
@@ -40,6 +42,7 @@ const getStoredCartList = () => {
         storedWishList.push(id);
         const storedWishListStr = JSON.stringify(storedWishList);
         localStorage.setItem('wish-list', storedWishListStr);
+        toast('this gadget is added to the WishList')
     }
  }
 
