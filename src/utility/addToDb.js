@@ -46,4 +46,16 @@ const getStoredCartList = () => {
     }
  }
 
- export { addToStoredCartList, addToStoredWishList, getStoredCartList, getStoredWishList }
+ const removeFromDb = (id, type) => {
+    let storedList = JSON.parse(localStorage.getItem(type)) || [];
+    storedList = storedList.filter(itemId => itemId !== id);
+    localStorage.setItem(type, JSON.stringify(storedList));
+};
+
+const updateStoredList = (updatedList, type) => {
+    // Convert the list to an array of ids (assuming each item in the list has an 'id' property)
+    const updatedIds = updatedList.map(item => item.id);
+    localStorage.setItem(type, JSON.stringify(updatedIds)); // Update the list in localStorage
+};
+
+ export { addToStoredCartList, addToStoredWishList, getStoredCartList, getStoredWishList, removeFromDb, updateStoredList }
