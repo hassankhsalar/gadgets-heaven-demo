@@ -9,7 +9,7 @@ const Footer = () => {
             <h2 className='text-2xl font-semibold'>Gadget Heaven</h2>
             <p className='text-slate-500'>Leading the way in cutting-edge technology and innovation.</p>
         </div>
-        <div className='flex flex-row justify-between border-2 w-8/12 mx-auto'>   
+        <div className='flex flex-row justify-between  w-8/12 mx-auto'>   
   <nav className='flex flex-col'>
     <h6 className="footer-title">Services</h6>
     <a className="link link-hover">Product Support</a>

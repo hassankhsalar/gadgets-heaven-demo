@@ -10,6 +10,7 @@ import Statistics from "../pages/Statistics"
 import GagdgetCards from "../components/GagdgetCards"
 import CartList from "../cartList/CartList"
 import WishList from "../WishList/WishList"
+import TechBlog from "../pages/techBlog"
 
 
 const routes = createBrowserRouter([
@@ -61,6 +62,10 @@ const routes = createBrowserRouter([
           path: '/wishlist',
           element: <WishList />,
           loader: () => fetch('../gadgets.json'),
+        },
+        {
+          path: '/techblog',
+          element: <TechBlog />,
         },
       ]
     },

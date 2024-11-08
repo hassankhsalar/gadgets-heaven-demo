@@ -36,6 +36,7 @@ const Navbar = () => {
                     <Link to='/'>Home</Link>
                     <Link to='/statistics'>Statistics</Link>
                     <NavLink to="/cartlist">Dashboard</NavLink>
+                    <NavLink to="/techblog">Blogs</NavLink>
                 </ul>
             </div>
             <div className="navbar-end gap-3">

@@ -5,7 +5,7 @@ const Card = ({ gadget }) => {
     const navigate = useNavigate()
     const { id, name, image, category, price, description, specification, availability, rating } = gadget || {}
     return (
-        <div className="card bg-base-100 w-72 shadow-xl lg:w-96">
+        <div className="card bg-base-100 w-72 shadow-xl lg:w-72">
   <figure className="px-10 pt-10">
     <img
       src={image}
