@@ -53,9 +53,8 @@ const getStoredCartList = () => {
 };
 
 const updateStoredList = (updatedList, type) => {
-    // Convert the list to an array of ids (assuming each item in the list has an 'id' property)
     const updatedIds = updatedList.map(item => item.id);
-    localStorage.setItem(type, JSON.stringify(updatedIds)); // Update the list in localStorage
+    localStorage.setItem(type, JSON.stringify(updatedIds)); 
 };
 
  export { addToStoredCartList, addToStoredWishList, getStoredCartList, getStoredWishList, removeFromDb, updateStoredList }

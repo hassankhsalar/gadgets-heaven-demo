@@ -1,12 +1,12 @@
-/* eslint-disable react/prop-types */
+
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const Categories = ({ categories = [] }) => {
-    // Ensure categories is an array
+    
     if (!Array.isArray(categories)) {
         console.error("Expected categories to be an array, got:", categories);
-        return null; // or return a fallback UI
+        return null;
     }
 
     return (

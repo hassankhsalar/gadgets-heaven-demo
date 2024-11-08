@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useLoaderData, useNavigate } from 'react-router-dom';
-import { getStoredCartList, getStoredWishList, updateStoredList } from '../utility/addToDb'; // Assume updateStoredList is a utility to update the storage
+import { getStoredCartList, getStoredWishList, updateStoredList } from '../utility/addToDb';
 import CartWishCards from '../CartWish/CartWishCards';
 
 const CartList = () => {
@@ -21,7 +22,7 @@ const CartList = () => {
 
         setCartList(cartItems);
         setWishList(wishItems);
-        setSortedList(cartItems); // Initialize the sorted list with the cart list
+        setSortedList(cartItems);
     }, [allGadgets]);
 
     const handleSortByPrice = () => {
@@ -40,7 +41,7 @@ const CartList = () => {
         setCartList([]);
         setSortedList([]);
         setIsModalOpen(false);
-        navigate('/'); // Redirect to the home page
+        navigate('/');
     };
 
     const handleTabSwitch = (tab) => {
@@ -48,23 +49,27 @@ const CartList = () => {
         setSortedList(tab === 'cart' ? cartList : wishList);
     };
 
-    // Function to handle deleting an item from the list
     const handleDelete = (id) => {
         if (activeTab === 'cart') {
             const updatedCartList = cartList.filter(gadget => gadget.id !== id);
             setCartList(updatedCartList);
-            setSortedList(updatedCartList); // Update sorted list for cart view
-            updateStoredList(updatedCartList, 'cart'); // Update localStorage for cart
+            setSortedList(updatedCartList);
+            updateStoredList(updatedCartList, 'cart');
         } else if (activeTab === 'wish') {
             const updatedWishList = wishList.filter(gadget => gadget.id !== id);
             setWishList(updatedWishList);
-            setSortedList(updatedWishList); // Update sorted list for wishlist view
-            updateStoredList(updatedWishList, 'wish'); // Update localStorage for wishlist
+            setSortedList(updatedWishList);
+            updateStoredList(updatedWishList, 'wish');
         }
     };
 
     return (
         <div>
+            
+            <Helmet>
+                <title>{activeTab === 'cart' ? 'Cart List - Gadgets Heaven' : 'Wishlist - Gadgets Heaven'}</title>
+            </Helmet>
+
             <div className="bg-purple-500 w-full mx-auto rounded-2xl h-3/6 flex flex-col text-center justify-center items-center py-24">
                 <h1 className="text-5xl text-white font-bold">Dashboard</h1>
                 <p className="py-6 w-7/12 text-white font-light text-slate-300">
@@ -97,7 +102,7 @@ const CartList = () => {
                         <button 
                             onClick={handlePurchase} 
                             className="btn bg-purple-500 rounded-3xl text-white"
-                            disabled={isCartEmpty} // Disable the button if the cart is empty
+                            disabled={isCartEmpty}
                         >
                             Purchase
                         </button>
@@ -111,7 +116,6 @@ const CartList = () => {
                 ))}
             </div>
 
-            {/* Modal for congratulatory message after purchase */}
             {isModalOpen && (
                 <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">
                     <div className="bg-white p-8 rounded-lg shadow-lg text-center">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import ReactMarkdown from 'react-markdown';
 
 const TechBlog = () => {
@@ -29,6 +30,12 @@ As we move into 2024, it’s clear that gadgets are evolving to become more inte
 
     return (
         <div className="bg-purple-500 rounded-3xl text-white pt-24 px-24">
+            
+            <Helmet>
+                <title>{blog.title} - Tech Blog</title>
+                <meta name="description" content="Read about the top 5 innovative gadgets of 2024 that will enhance your tech experience." />
+            </Helmet>
+
             <h1 className="text-4xl font-bold mb-4">{blog.title}</h1>
             <p className="text-lg font-light mb-4">By {blog.author} | Published on {blog.date}</p>
             <div className="text-lg leading-relaxed space-y-4">

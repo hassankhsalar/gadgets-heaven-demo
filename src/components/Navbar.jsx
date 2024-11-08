@@ -40,12 +40,11 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-3">
-                {/* Cart icon with link to cartlist */}
+                
                 <Link to="/cartlist">
                     <FontAwesomeIcon className='bg-slate-50 rounded-full p-1' icon={faCartShopping} />
                 </Link>
                 
-                {/* Heart icon with link to wishlist */}
                 <Link to="/wishlist">
                     <FontAwesomeIcon className='bg-slate-50 rounded-full p-1' icon={faHeart} />
                 </Link>
