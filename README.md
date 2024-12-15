@@ -38,7 +38,7 @@ To run the project locally, follow these steps:
 
 1. **Access the application**:
     Visit `https://gadget-heavenbykh.netlify.app/` in your web browser.
-
+n
 2. **Requirement Document**:
     Visit `https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/cb107cb186465d2189e83f743d16aa13a0cb206e/Batch-10_Assignment-08.pdf` .    
 
